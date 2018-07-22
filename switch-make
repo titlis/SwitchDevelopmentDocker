@@ -1,0 +1,6 @@
+#!/bin/bash
+buildpath="$PWD"
+if [ "$1" != "" ]; then
+  buildpath="$1"
+fi
+docker run --rm -v $buildpath:/switch switch-dev
